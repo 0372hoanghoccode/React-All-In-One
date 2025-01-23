@@ -1,0 +1,5 @@
+Vấn đề 1
+ Tại sao và làm sao sử dụng key trong các component trong React?
+
+Vấn đề 2
+ Làm sao để render danh sách và sử dụng key để tối ưu hóa hiệu suất?

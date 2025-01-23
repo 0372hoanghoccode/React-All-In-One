@@ -1,0 +1,3 @@
+khi nào dùng useContext?
+
+Dùng khi: Truyền dữ liệu xuyên suốt component tree (theme, auth, ngôn ngữ).(nhiều cách giải quyết)

@@ -1,0 +1,8 @@
+Vấn đề 1
+Cách truyền dữ liệu từ component cha đến component con?
+
+Vấn đề 2
+Cách viết gọn hơn khi nhận props?
+
+Vấn đề 3
+Cách sử dụng props.children để truyền nội dung?

@@ -1,0 +1,3 @@
+khi nào dùng useRef?
+
+Dùng khi: Truy cập DOM element hoặc lưu giá trị không gây re-render.

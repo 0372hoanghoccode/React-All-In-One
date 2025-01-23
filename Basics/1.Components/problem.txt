@@ -1,0 +1,8 @@
+Vấn đề 1:
+Làm sao để tạo các thành phần (component) trong ReactJS?
+
+Vấn đề 2:
+Cách chia nhỏ giao diện thành nhiều component?
+
+vấn đề 3: 
+một số ràng buộc về cú pháp

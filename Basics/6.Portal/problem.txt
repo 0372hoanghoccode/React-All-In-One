@@ -1,0 +1,4 @@
+Vấn đề 1
+Khi nào sử dụng Portal?
+Khi bạn cần render các component như modal, tooltip, dropdown, notification, v.v.
+Khi bạn muốn tách biệt UI khỏi cấu trúc DOM thông thường nhưng vẫn giữ nguyên logic trong React component tree.

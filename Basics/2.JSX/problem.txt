@@ -1,0 +1,5 @@
+Vấn đề 1:
+Làm sao để viết HTML trong JavaScript bằng JSX?
+
+Vấn đề 2:
+Các quy tắc cần tuân thủ khi sử dụng JSX?

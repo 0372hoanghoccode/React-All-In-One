@@ -1,0 +1,3 @@
+khi nào dùng useCallback?
+
+Dùng khi: Tối ưu hàm callback, tránh tạo hàm mới mỗi lần render.

@@ -1,0 +1,3 @@
+khi nào dùng useState?
+
+Dùng khi: Quản lý state đơn giản (số, chuỗi, boolean, object).

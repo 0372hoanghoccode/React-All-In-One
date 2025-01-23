@@ -1,0 +1,3 @@
+khi nào dùng useEffect?
+
+Dùng khi: Xử lý side effect (call API, subscriptions, DOM manipulation).

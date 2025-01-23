@@ -1,0 +1,3 @@
+khi nào dùng useMemo?
+
+Dùng khi: Tối ưu tính toán nặng, tránh tính toán lại không cần thiết.

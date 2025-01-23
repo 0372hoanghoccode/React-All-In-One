@@ -1,0 +1,3 @@
+khi nào dùng useId?
+
+Dùng khi: Tạo ID duy nhất cho accessibility (labels, aria attributes).
