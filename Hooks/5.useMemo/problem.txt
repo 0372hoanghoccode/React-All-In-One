@@ -1,3 +1,36 @@
 khi nào dùng useMemo?
 
 Dùng khi: Tối ưu tính toán nặng, tránh tính toán lại không cần thiết.
+
+Bài tập: Sử dụng useMemo trong React
+Trong bài tập này, bạn sẽ học cách:
+
+Tối ưu hóa hiệu suất bằng cách sử dụng hook useMemo.
+Tránh việc tính toán lại các giá trị không cần thiết.
+Hiểu cách useMemo hoạt động với dependencies.
+
+Bước 1: Tạo Component Cơ Bản với useMemo
+Tạo một file mới có tên BasicMemo.jsx.
+Trong file này:
+Tạo một component dạng function có tên BasicMemo.
+Sử dụng useMemo để tính toán một giá trị phức tạp chỉ khi một giá trị đầu vào thay đổi.
+
+Bước 2: Sử dụng useMemo để Tối Ưu Hóa Danh Sách Lọc
+Tạo một file mới có tên FilteredList.jsx.
+Trong file này:
+Tạo một component dạng function có tên FilteredList.
+Sử dụng useMemo để tính toán danh sách lọc từ một danh sách lớn.
+
+Bước 3: Kết Hợp useMemo với Tính Toán Phức Tạp
+Tạo một file mới có tên ExpensiveCalculation.jsx.
+Trong file này:
+Tạo một component dạng function có tên ExpensiveCalculation.
+Sử dụng useMemo để tối ưu hóa một phép tính phức tạp.
+
+Bước 4: Render Các Component trong App.jsx
+Trong file App.jsx, import và render các component đã tạo.
+
+Kết quả
+BasicMemo: Hiển thị giá trị tính toán (giai thừa) chỉ khi đầu vào thay đổi.
+FilteredList: Hiển thị danh sách đã lọc, tối ưu hóa việc lọc với useMemo.
+ExpensiveCalculation: Tối ưu hóa các phép tính phức tạp, tránh tính toán lại không cần thiết.

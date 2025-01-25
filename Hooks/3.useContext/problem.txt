@@ -1,3 +1,31 @@
 khi nào dùng useContext?
 
 Dùng khi: Truyền dữ liệu xuyên suốt component tree (theme, auth, ngôn ngữ).(nhiều cách giải quyết)
+
+Bài tập: Sử dụng Context và useContext trong React
+Trong bài tập này, bạn sẽ học cách:
+
+Tạo một Context.
+Sử dụng useContext để truy cập dữ liệu từ Context.
+Chia sẻ state và các hàm giữa các component mà không cần sử dụng props.
+
+Bước 1: Tạo Context
+Tạo một file mới có tên là UserContext.js.
+Trong file này, thực hiện các bước sau:
+Tạo một Context có tên là UserContext.
+Tạo một component Provider có tên là UserProvider để chứa và chia sẻ state.
+
+Bước 2: Sử dụng useContext trong Components
+Tạo một file mới có tên là UserProfile.jsx.
+Trong file này, thực hiện các bước sau:
+Tạo một component dạng function có tên là UserProfile.
+Sử dụng hook useContext để truy cập dữ liệu người dùng (user) từ UserContext.
+Hiển thị thông tin người dùng.
+
+Bước 3: Cập nhật dữ liệu Context
+Tạo một file mới có tên là UpdateUser.jsx.
+Trong file này, thực hiện các bước sau:
+Tạo một component dạng function có tên là UpdateUser.
+Sử dụng hook useContext để truy cập hàm setUser từ UserContext.
+Tạo một input để người dùng nhập tên mới.
+Cập nhật tên người dùng khi nhấn nút "Update".

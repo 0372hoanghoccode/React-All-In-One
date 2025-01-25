@@ -1,0 +1,30 @@
+khi nào dùng useReducer
+
+Dùng khi: Quản lý state phức tạp (state logic nhiều action, state lồng nhau).
+
+Bài tập: Sử dụng useReducer trong React
+Trong bài tập này, bạn sẽ học cách:
+
+Định nghĩa một hàm reducer để quản lý logic trạng thái.
+Sử dụng hook useReducer để quản lý trạng thái phức tạp trong một component React.
+Gửi (dispatch) các action để cập nhật trạng thái.
+
+Bước 1: Tạo Hàm Reducer
+Tạo một file mới có tên là counterReducer.js.
+Trong file này, định nghĩa một hàm reducer để quản lý trạng thái đơn giản của bộ đếm (counter).
+
+Bước 2: Sử dụng useReducer Hook
+Tạo một file mới có tên là Counter.jsx.
+Trong file này, thực hiện các bước sau:
+Tạo một component dạng function có tên là Counter.
+Sử dụng hook useReducer để quản lý trạng thái của bộ đếm (counter).
+Render hai nút để tăng và giảm giá trị bộ đếm.
+
+Bước 3: Mở rộng Reducer với Nhiều Action
+Sửa file counterReducer.js để thêm các action cho phép tăng hoặc giảm theo một giá trị cụ thể.
+
+Bước 4: Sử dụng Payload trong Actions
+Cập nhật file Counter.jsx để cho phép người dùng tăng hoặc giảm giá trị bộ đếm theo một giá trị cụ thể thông qua một ô nhập liệu (input).
+
+Bước 5: Render Counter trong App.jsx
+Trong file App.jsx, import và render component Counter.

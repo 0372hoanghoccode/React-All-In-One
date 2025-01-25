@@ -1,3 +1,41 @@
 khi nào dùng useCallback?
 
 Dùng khi: Tối ưu hàm callback, tránh tạo hàm mới mỗi lần render.
+
+Bài tập: Sử dụng useCallback trong React
+Trong bài tập này, bạn sẽ học cách:
+
+Tối ưu hóa việc tạo lại hàm bằng hook useCallback.
+Hiểu cách useCallback hoạt động với dependencies.
+Tránh các vấn đề không cần thiết khi sử dụng các hàm callback trong React.
+
+Bước 1: Tạo Component với useCallback Cơ Bản
+Tạo một file mới có tên BasicCallback.jsx.
+Trong file này:
+Tạo một component dạng function có tên BasicCallback.
+Sử dụng useCallback để tạo một hàm callback chỉ khi dependencies thay đổi
+
+Bước 2: Sử Dụng useCallback với Component Con
+Tạo một file mới có tên ParentWithCallback.jsx.
+Trong file này:
+Tạo một component cha có tên ParentWithCallback.
+Tạo một component con nhận hàm callback từ cha qua props.
+
+Bước 3: Sử Dụng useCallback với Danh Sách Lọc
+Tạo một file mới có tên FilteredListWithCallback.jsx.
+Trong file này:
+Tạo một component danh sách có tính năng lọc bằng callback.
+
+Bước 4: Kết Hợp useCallback với Các Sự Kiện
+Tạo một file mới có tên EventHandlersWithCallback.jsx.
+Trong file này:
+Tạo các sự kiện như click hoặc hover, được tối ưu bằng useCallback.
+
+Bước 5: Render Các Component trong App.jsx
+Trong file App.jsx, import và render tất cả các component đã tạo.
+
+Kết quả
+BasicCallback: Tối ưu hóa hàm callback đơn giản với dependency.
+ParentWithCallback: Tránh việc re-render không cần thiết trong component con.
+FilteredListWithCallback: Hiển thị danh sách lọc một cách tối ưu.
+EventHandlersWithCallback: Tối ưu hóa sự kiện liên tục như hover hoặc click.

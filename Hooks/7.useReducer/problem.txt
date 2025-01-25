@@ -1,3 +1,0 @@
-khi nào dùng useReducer
-
-Dùng khi: Quản lý state phức tạp (state logic nhiều action, state lồng nhau).
