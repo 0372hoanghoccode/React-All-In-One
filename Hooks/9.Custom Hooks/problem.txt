@@ -1,0 +1,40 @@
+Bài tập: Tạo và Sử dụng Custom Hooks trong React
+Trong bài tập này, bạn sẽ học cách:
+
+Tạo một custom hook để quản lý state và logic.
+Tái sử dụng custom hook trong nhiều thành phần.
+Tạo hooks để xử lý input trong form và lấy dữ liệu từ API.
+
+Bước 1: Tạo Custom Hook để chuyển đổi trạng thái boolean
+Tạo một file mới có tên useToggle.js.
+Trong file này, định nghĩa một custom hook useToggle để chuyển đổi trạng thái boolean giữa true và false.
+
+Bước 2: Sử dụng Custom Hook trong một Component
+Tạo một file mới có tên ToggleComponent.jsx.
+Trong file này, tạo một component sử dụng hook useToggle để chuyển đổi thông điệp.
+
+Bước 3: Tạo Custom Hook để Quản lý Input Form
+Tạo một file mới có tên useInput.js.
+Trong file này, định nghĩa một custom hook useInput để xử lý thay đổi input.
+
+Bước 4: Sử dụng Hook useInput trong Component Form
+Tạo một file mới có tên FormComponent.jsx.
+Trong file này, tạo một component form sử dụng hook useInput để quản lý nhiều input.
+
+Bước 5: Tạo Custom Hook để Lấy Dữ liệu từ API
+Tạo một file mới có tên useFetch.js.
+Trong file này, định nghĩa một custom hook useFetch để lấy dữ liệu từ API
+
+Bước 6: Sử dụng Hook useFetch để Hiển thị Dữ liệu trong Component
+Tạo một file mới có tên FetchComponent.jsx.
+Trong file này, tạo một component sử dụng hook useFetch để hiển thị dữ liệu từ API.
+
+Bước 7: Kết hợp Tất cả Components trong App.jsx
+Trong file App.jsx, import và render các component: ToggleComponent, FormComponent, và FetchComponent.
+
+Kết quả:
+Khi bạn chạy ứng dụng, bạn sẽ thấy:
+
+Một component để bật/tắt trạng thái boolean.
+Một form để nhập dữ liệu và hiển thị giá trị đã nhập.
+Một danh sách dữ liệu được lấy từ API.

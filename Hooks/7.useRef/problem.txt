@@ -1,3 +1,30 @@
 khi nào dùng useRef?
 
 Dùng khi: Truy cập DOM element hoặc lưu giá trị không gây re-render.
+
+Bài tập: Sử dụng useRef trong React
+Trong bài tập này, bạn sẽ học cách:
+
+Sử dụng useRef để tham chiếu các phần tử DOM.
+Sử dụng useRef để lưu trữ giá trị tồn tại qua các lần render mà không kích hoạt render lại.
+Bước 1: Tham chiếu phần tử DOM với useRef
+
+File FocusInput.jsx
+Tạo một file mới tên là FocusInput.jsx.
+Trong file này, tạo một functional component để khi nhấn nút, trường input sẽ được focus bằng cách sử dụng hook useRef.
+
+Bước 2: Lưu trữ giá trị tồn tại qua các lần render với useRef
+File Timer.jsx
+Tạo một file mới tên là Timer.jsx.
+Trong file này, tạo một functional component để triển khai một bộ đếm thời gian đơn giản. Bộ đếm này sử dụng useRef để lưu trữ giá trị của interval, đảm bảo không kích hoạt render lại.
+
+Giải thích
+FocusInput.jsx:
+
+useRef được dùng để tham chiếu trực tiếp đến phần tử DOM (<input>).
+Khi nhấn nút, hàm handleFocus gọi inputRef.current.focus() để đặt focus vào trường input.
+Timer.jsx:
+
+useRef được dùng để lưu trữ ID của interval (setInterval) qua các lần render.
+Dọn dẹp interval trong useEffect để tránh rò rỉ bộ nhớ khi component bị gỡ bỏ.
+Sử dụng clearInterval để dừng bộ đếm khi cần thiết.

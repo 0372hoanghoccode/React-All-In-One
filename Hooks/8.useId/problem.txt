@@ -1,3 +1,21 @@
 khi nào dùng useId?
 
 Dùng khi: Tạo ID duy nhất cho accessibility (labels, aria attributes).
+
+Sử dụng useId:
+
+Tạo các ID duy nhất cho các phần tử trong biểu mẫu.
+Đảm bảo ID được liên kết đúng giữa thẻ <label> và các trường nhập liệu (input).
+Hiển thị biểu mẫu cơ bản:
+
+Biểu mẫu bao gồm 2 trường:
+Trường nhập Tên (text input).
+Trường nhập Email (email input).
+Thêm nút Gửi để gửi biểu mẫu.
+
+Kết quả:
+Biểu mẫu hiển thị đơn giản với 2 trường:
+Tên (Text input)
+Email (Email input)
+Nút "Gửi" ở dưới.
+useId đảm bảo mỗi trường có ID duy nhất liên kết chính xác với nhãn (label).

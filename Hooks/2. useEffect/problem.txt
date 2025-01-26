@@ -2,3 +2,38 @@ khi nào dùng useEffect?
 
 Dùng khi: Xử lý side effect (call API, subscriptions, DOM manipulation).
 
+Bài tập: Hiểu về useEffect trong React
+
+Trong bài tập này, bạn sẽ thực hành sử dụng hook useEffect trong các tình huống khác nhau, bao gồm việc lấy dữ liệu và xử lý các tác dụng phụ (side effects).
+
+Bước 1: Sử dụng cơ bản của useEffect
+Tạo một file mới có tên BasicEffect.jsx.
+Trong file này, tạo một component hàm tên là BasicEffect.
+Sử dụng useEffect để log một thông báo ra console mỗi khi component được mount (tức là khi component được render lần đầu tiên).
+
+Bước 2: useEffect với Dependencies
+Tạo một file mới có tên CounterEffect.jsx.
+Trong file này, tạo một component hàm tên là CounterEffect.
+Sử dụng useEffect để cập nhật tiêu đề trang (document title) mỗi khi giá trị counter thay đổi.
+Khởi tạo một state count với giá trị ban đầu là 0 bằng useState.
+Render một button để tăng giá trị của count.
+Sử dụng useEffect để cập nhật tiêu đề trang mỗi khi count thay đổi.
+
+Bước 3: useEffect để Lấy Dữ liệu
+Tạo một file mới có tên FetchDataEffect.jsx.
+Trong file này, tạo một component hàm tên là FetchDataEffect.
+Sử dụng useEffect để lấy dữ liệu từ một API khi component được mount.
+Sử dụng endpoint API https://jsonplaceholder.typicode.com/posts để lấy một số dữ liệu.
+Lưu trữ dữ liệu trong một state variable và hiển thị tiêu đề của bài viết đầu tiên.
+
+Giải thích:
+
+Bước 1: useEffect giúp bạn thực hiện các tác dụng phụ như log, fetch dữ liệu, cập nhật tiêu đề trang, v.v., khi component được render.
+Bước 2: Bạn sẽ học cách sử dụng useEffect với các dependencies. Khi các dependencies thay đổi, useEffect sẽ được gọi lại.
+Bước 3: Bạn sẽ thực hành lấy dữ liệu từ API khi component được mount và hiển thị dữ liệu đó trên giao diện.
+
+
+
+
+
+
