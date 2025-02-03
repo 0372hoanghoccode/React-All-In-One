@@ -1,9 +1,9 @@
-import React from 'react';
-import FormExample from '../components/FormExample';
+import React from "react";
+import FormExample from "../components/FormExample";
 
 const FormPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <FormExample />
     </div>
   );
