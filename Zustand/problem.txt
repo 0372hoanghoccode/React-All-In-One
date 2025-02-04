@@ -1,0 +1,14 @@
+todolist cơ bản với zustand ?
+
+todoStore.ts
+Định nghĩa interface Todo và TodoState mô tả state và các hành động thay đổi state.
+Sử dụng create từ Zustand để tạo store chứa danh sách todos và các hàm addTodo, removeTodo, toggleTodo.
+
+TodoInput.tsx
+Component sử dụng hook useState để quản lý giá trị nhập.
+Lấy action addTodo từ store qua hook useTodoStore.
+Khi submit form, nếu giá trị nhập không rỗng, gọi addTodo để thêm công việc mới.
+
+TodoList.tsx
+Lấy danh sách todos và các hành động removeTodo, toggleTodo từ store.
+Hiển thị danh sách công việc, cho phép người dùng click vào tên công việc để đổi trạng thái hoàn thành và nhấn nút “Xóa” để xóa công việc.
