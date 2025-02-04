@@ -1,0 +1,6 @@
+Sử dụng Redux Toolkit:
+createSlice giúp giảm boilerplate code khi định nghĩa reducer và action.
+createAsyncThunk được dùng để xử lý các tác vụ bất đồng bộ, dễ dàng xử lý các trạng thái pending, fulfilled và rejected.
+
+Kết nối Redux với React:
+Sử dụng Provider để bọc ứng dụng và useSelector, useDispatch kết hợp với các type RootState và AppDispatch giúp truy xuất và thao tác dữ liệu trong store một cách an toàn.
