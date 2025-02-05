@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
+//fetch post ngẫu nhiên
 const fetchRandomPost = async () => {
   // Lấy một bài post ngẫu nhiên (sử dụng post ID ngẫu nhiên từ 1 đến 100)
   const randomId = Math.floor(Math.random() * 100) + 1;
@@ -10,15 +11,17 @@ const fetchRandomPost = async () => {
 };
 
 const RefetchIntervalExample: React.FC = () => {
+  // Sử dụng useQuery với refetch tự động
   const { data, isLoading } = useQuery({
-    queryKey: ['randomPost'],
-    queryFn: fetchRandomPost,
+    queryKey: ['randomPost'], // Key cho query
+    queryFn: fetchRandomPost, // Hàm fetch post ngẫu nhiên
     refetchInterval: 5000, // Refetch mỗi 5 giây
   });
 
   return (
     <div>
       <h3>Refetch Interval Example</h3>
+      {/* trạng thái loading/success */}
       {isLoading ? (
         <p>Loading random post...</p>
       ) : (
