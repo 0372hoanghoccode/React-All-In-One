@@ -1,0 +1,61 @@
+BASIC 
+
+So sánh hai cách fetch data:
+
+Không dùng TanStack Query:
+Phải tự quản lý state (loading, error, data)
+Viết logic fetch, update state thủ công
+Không có cache, không tối ưu performance
+
+Dùng TanStack Query:
+Quản lý state tự động
+Có cache (staleTime: 5 phút)
+Giảm code boilerplate
+Tự động xử lý loading/error
+Dễ dàng config refetch, invalidate
+
+Deduplication:
+Nhiều component dùng chung query key
+API chỉ gọi 1 lần
+Tránh request thừa
+
+Race Condition:
+Xử lý việc thay đổi postId
+Ngăn chặn request không đồng bộ
+Quản lý trạng thái loading/error
+
+Refetch Interval:
+Tự động cập nhật dữ liệu
+Fetch random post mỗi 5 giây
+Minh họa tính năng polling
+
+Stale Time:
+Giữ dữ liệu trong cache
+Hạn chế việc fetch không cần thiết
+Kiểm soát thời gian dữ liệu còn hiệu lực
+Mục đích: Giới thiệu các kỹ thuật quản lý data fetching hiệu quả.
+
+Fetch Multiple Endpoints:
+Gọi nhiều API cùng lúc
+Quản lý state cho từng request
+
+Fetch One Item:
+Fetch dữ liệu theo ID
+Điều khiển fetch có điều kiện (enabled)
+Động từng item
+
+Mutating Data:
+Thêm mới dữ liệu
+Cập nhật cache
+Xử lý trạng thái mutation
+
+Infinite Queries:
+Load more data
+Phân trang động
+Quản lý trạng thái load thêm
+
+Pagination:
+Điều hướng trang
+Fetch dữ liệu theo trang
+Quản lý state trang
+
