@@ -1,0 +1,84 @@
+Tab.tsx (Compound Component Pattern):
+Là component con của Tab system
+Quản lý việc hiển thị nội dung tab
+Sử dụng useEffect để đặt tab đầu tiên là active
+Ẩn/hiện nội dung tab dựa trên activeTab
+
+
+Tabs.tsx (Compound Component Pattern):
+Tạo context quản lý trạng thái tab
+Cung cấp activeTab và setActiveTab
+Cho phép điều khiển tab một cách linh hoạt
+Sử dụng createContext và useState
+
+
+ThemeContext.tsx (Context API):
+Quản lý theme (light/dark)
+Cung cấp toggleTheme để chuyển theme
+Sử dụng useState để lưu trạng thái theme
+
+
+ControlledInput.tsx:
+Input có state do React quản lý
+Giá trị input luôn đồng bộ với state
+Thay đổi giá trị qua setValue
+
+
+UncontrolledInput.tsx:
+Input sử dụng useRef
+Giá trị không do React quản lý
+Truy xuất giá trị qua inputRef
+
+
+ErrorBoundary.tsx:
+Bắt lỗi xảy ra ở component con
+Hiển thị thông báo khi có lỗi
+Sử dụng lifecycle method componentDidCatch
+
+
+ComponentFactory.tsx:
+Tạo component động (button/link)
+Quyết định render component nào dựa trên props
+Linh hoạt trong việc tạo component
+
+
+withLogger.tsx (Higher Order Component):
+Thêm chức năng log cho component
+Theo dõi vòng đời component
+In log khi mount/unmount
+
+
+useCustomHook.tsx:
+Custom hook tạo counter
+Tăng giá trị mỗi giây
+Sử dụng useEffect và setInterval
+
+
+Layout.tsx:
+Cấu trúc layout cơ bản
+Có header, main, footer
+Bọc nội dung chính
+
+
+DataDisplay.tsx:
+Component hiển thị danh sách
+Render item theo function được truyền vào
+Xử lý trường hợp danh sách rỗng
+
+
+DataProvider.tsx (Render Props):
+Cung cấp dữ liệu bất đồng bộ
+Sử dụng render prop để truyền data
+Mô phỏng việc fetch data
+
+
+SlotExample.tsx:
+Cho phép truyền nội dung vào các slot
+Linh hoạt trong việc compose component
+Render header, body, footer
+
+
+App.tsx:
+Tổng hợp và demo các design pattern
+Bọc toàn bộ app trong ThemeProvider và ErrorBoundary
+Render các component demo
