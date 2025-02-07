@@ -1,10 +1,10 @@
-import React from 'react';
+import "./Pages.css";
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
-    <div>
-      <h2>Contact Page</h2>
-      <p>You can contact us via email at example@example.com.</p>
+    <div className="page-container">
+      <h1>Liên hệ</h1>
+      <p>Liên hệ với chúng tôi qua email: contact@example.com</p>
     </div>
   );
 };

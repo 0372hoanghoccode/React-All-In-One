@@ -1,34 +1,38 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './Navigation.css';
+import { NavLink } from "react-router-dom";
+import "./Navigation.css";
 
-const Navigation: React.FC = () => {
+const Navigation = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="nav-container">
+      <ul className="nav-list">
         <li>
-          <NavLink
+          <NavLink 
             to="/"
-            end
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            className={({ isActive }) => 
+              isActive ? "nav-link active" : "nav-link"
+            }
           >
-            Home
+            Trang chủ
           </NavLink>
         </li>
         <li>
-          <NavLink
+          <NavLink 
             to="/about"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            className={({ isActive }) => 
+              isActive ? "nav-link active" : "nav-link"
+            }
           >
-            About
+            Giới thiệu
           </NavLink>
         </li>
         <li>
-          <NavLink
+          <NavLink 
             to="/contact"
-            className={({ isActive }) => (isActive ? 'active' : '')}
+            className={({ isActive }) => 
+              isActive ? "nav-link active" : "nav-link"
+            }
           >
-            Contact
+            Liên hệ
           </NavLink>
         </li>
       </ul>

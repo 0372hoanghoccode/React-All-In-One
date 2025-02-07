@@ -1,12 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { useRouteError, isRouteErrorResponse, Link } from "react-router-dom";
+import "./Pages.css";
 
-const NotFound: React.FC = () => {
+const NotFound = () => {
+  const error = useRouteError();
+  
   return (
-    <div>
-      <h2>404 - Not Found</h2>
-      <p>The page you're looking for doesn't exist.</p>
-      <Link to="/">Go back to Home</Link>
+    <div className="error-container">
+      <h1>
+        {isRouteErrorResponse(error) ? 'Không tìm thấy trang' : 'Có lỗi xảy ra!'}
+      </h1>
+      <p>
+        {isRouteErrorResponse(error)
+          ? "trang bạn đang tìm kiếm không tồn tại."
+          : "đã xảy ra lỗi không mong muốn."}
+      </p>
+      <Link to="/" className="home-link">
+        Quay về trang chủ
+      </Link>
     </div>
   );
 };

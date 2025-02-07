@@ -1,10 +1,10 @@
-import React from 'react';
+import "./Pages.css";
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
-    <div>
-      <h2>Home Page</h2>
-      <p>Welcome to the React Router v7 demo application!</p>
+    <div className="page-container">
+      <h1>Trang chủ</h1>
+      <p>Chào mừng đến với ứng dụng React Router v7!</p>
     </div>
   );
 };
